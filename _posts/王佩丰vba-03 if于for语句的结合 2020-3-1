@@ -1,0 +1,13 @@
+一.Range对象
+Range("A"&i)
+二.If
+If... Then
+ElseIf... Then
+Else
+End If
+
+And/Or
+
+ExitFor
+
+step -1#仅限于删减空白行以及其他用途
