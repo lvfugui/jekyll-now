@@ -1,0 +1,16 @@
+本节重点：for循环：
+生成工资条Sub gzt()Rows("1:1").Select '最后录制再粘贴进去
+For i = 1 To 10    
+Selection.Copy    ActiveCell.Offset(2, 0).
+Rows("1:1").EntireRow.Select    
+Selection.Insert Shift:=xlDown    
+Next  End Sub
+恢复工资表Sub gzb()
+Rows("3:3").Select '最后录制再粘贴进去
+For i = 1 To 10
+Application.CutCopyMode = False
+Selection.Delete Shift:=xlUp    ActiveCell.Offset(1, 0).
+Rows("1:1").EntireRow.Select    
+Next
+End Sub
+注意理解相对引用于绝对引用的不同用法
